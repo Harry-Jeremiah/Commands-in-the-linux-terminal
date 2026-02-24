@@ -1,0 +1,75 @@
+Linux Terminal commands  #2
+
+Text files
+
+cat - used to create file and display the text of files.
+
+cat /etc/hosts
+
+Other commands used to view file content
+more /etc/passwd
+
+When using more, do the following:
+	Use the spacebar to show the next screen
+	Use enter key to show the next line of the file content
+	Use letter q to terminte the command
+	
+less /etc/passwd
+
+When using less, do the following:
+	spacebar - next window
+	letter b - previous window
+	enter key - next line
+	letter y - previous line
+	letter q - stop the command
+
+head /etc/hosts
+-view first lines of the file
+
+tail /etc/hosts
+-view last lines of the file
+
+When used with -n option, they specify how many lines to display 
+	head -n 3 /etc/hosts
+	
+	tail -n 3 /etc/hosts
+	
+Command Line Pipes
+The pipe | - send output of one command into the input of another command
+
+ls -l /etc | head
+
+There is also an option of using multiple pipes 
+cat /etc/passwd | head -n 3 | tail -n 2 | sort
+
+Input/Output Redirection
+STDOUT - Standard output 
+-Displays output of a command on the screen
+
+Examples
+echo "Line 1"
+
+Using >, the standard output of a command will be redirected to a file.
+	echo "Line 1" > example.txt
+	
+cat example.txt
+
+> will overwrite the content of an existing file.
+>> will append the new content to the current of a file
+Both the above create a file if the line doesn't exist
+
+Control Statements
+-Allow a user to run multiple commands from the same command line
+
+Examples are Semi-colon(;), Double ampersand(&&), Double Pipe(||)
+
+Semi-colon - can run multiple commands one after the other
+cal ; date
+
+Double ampersand (logical AND), the second command executes only if first command succeeds
+cal && date
+
+double pipe (logical OR) ||, the second command executes if the first one fails
+cal || date
+
+
