@@ -1,0 +1,13 @@
+Control Statements
+-Allow a user to run multiple commands from the same command line
+
+Examples are Semi-colon(;), Double ampersand(&&), Double Pipe(||)
+
+Semi-colon - can run multiple commands one after the other
+cal ; date
+
+Double ampersand (logical AND), the second command executes only if first command succeeds
+cal && date
+
+double pipe (logical OR) ||, the second command executes if the first one fails
+cal || date
