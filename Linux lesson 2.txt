@@ -58,6 +58,18 @@ cat example.txt
 >> will append the new content to the current of a file
 Both the above create a file if the line doesn't exist
 
+STDERR - Standard error
+-any wrong command writes on the screen.
+In cases of noting down the error on a file, it will be redirected using 2> or 2>>
+
+Example:
+ls blah
+ls: cannot access blah: No such file or directory
+
+To print the above error in a file, we can redirect in a file.
+	ls blah 2> ls.error.txt
+
+
 Control Statements
 -Allow a user to run multiple commands from the same command line
 
@@ -71,5 +83,6 @@ cal && date
 
 double pipe (logical OR) ||, the second command executes if the first one fails
 cal || date
+
 
 
