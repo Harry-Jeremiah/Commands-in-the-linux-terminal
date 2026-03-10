@@ -1,0 +1,27 @@
+The File Paths
+-List of folders separated by (/) character.
+
+There are two types of file paths: 
+absloute and relative
+
+Absolute path
+-Specifies exact location of a directory regardless of what the current directory is
+-Always starts at the root(begins with /)
+
+For example 
+cd /home/user1/harry
+
+Relative Path 
+-Relative to the current location in the filesystem
+-Start with ./foldername or without ./
+
+For example 
+cd ./home or cd home
+
+the .. characters - the directory above the current directory
+  or you use it to move back to previous directory.
+denoted as cd ..
+
+the . character - the current directory
+
+ 
