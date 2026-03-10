@@ -1,0 +1,21 @@
+File System in the linux
+
+Directory Structure
+Root is the top level denoted by the (/)
+
+Using ls, we can view all the folders in the root 
+bin, boot, dev, etc, home, lib, opt, mnt, usr, var
+
+Home is a dedicated folder for a particular user where user stores personal data
+Usually, it has the name of the user account and it is a subfolder of the /home
+folder
+
+The user has full control of the content in the home folder.
+
+Note: the tilde(~) represents the home folder.
+
+Commands to note
+whoami - shows the name of the logged user.
+pwd(print working directory) - shows the user location within the file system.
+cd foldername - move into another folder
+cd ~ - Moves to the account home folder
